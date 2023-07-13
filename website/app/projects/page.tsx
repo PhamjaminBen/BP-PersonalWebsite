@@ -8,8 +8,8 @@ export default async function ProjectsPage(){
     <>
       <h1 className="text-5xl text-center font-inter pt-5 space-y-5">Projects</h1>
         <ul>
-          {projects.map((project) => (
-            <li className="flex flex-col space-y-10 lg:space-y-0 lg:space-x-4 lg:flex-row mx-10 sm:mx-16 md:mx-24 my-16">
+          {projects.map((project,index) => (
+            <li id = {`${index}`} className="flex flex-col space-y-10 lg:space-y-0 lg:space-x-4 lg:flex-row mx-10 sm:mx-16 md:mx-24 my-16">
               <div className="w-full lg:w-1/2">
                 <h2 className="text-xl mr-10">{project.title}</h2>
                 <br/>

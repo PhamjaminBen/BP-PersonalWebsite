@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className=" text-white">
       <div className="text-5xl text-center font-inter pb-20 pt-5 space-y-5">
-        <h1 className='transition-opactiy'>Hi, I'm Ben Pham </h1>
+        <h1 className='transition-opactiy'>Hi, I&apos;m Ben Pham </h1>
         <h1>I'm a student developer</h1>
       </div>
       <h1 className='text-5xl w-full text-center p-10'>About Me</h1>
@@ -16,7 +16,7 @@ export default function Home() {
           className='pl-0 lg:pl-20'
         />
         <p className="text-lg text-white text-left m-5 md:mx-20 ">I am a current student pursuing a bachelors
-          in computer science at the University of California, Irvine. I'm an aspiring full-stack 
+          in computer science at the University of California, Irvine. I&apos;m an aspiring full-stack 
           developer with a wide range of skills and expertise. 
           I am actively seeking experiences that offer opportunities for professional growth and personal development, 
           allowing me to expand my knowledge and learn new things.
