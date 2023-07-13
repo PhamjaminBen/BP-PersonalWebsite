@@ -9,15 +9,14 @@ export default async function ProjectsPage(){
       <h1 className="text-5xl text-center font-inter pt-5 space-y-5">Projects</h1>
         <ul>
           {projects.map((project) => (
-            <li className="flex flex-col lg:flex-row mx-10 sm:mx-16 md:mx-24 my-16">
-              <div>
+            <li className="flex flex-col space-y-10 lg:space-y-0 lg:space-x-4 lg:flex-row mx-10 sm:mx-16 md:mx-24 my-16">
+              <div className="w-full lg:w-1/2">
                 <h2 className="text-xl mr-10">{project.title}</h2>
                 <br/>
-                <article dangerouslySetInnerHTML={{__html: project.body}}
-                className=""/>
-                <button className='mt-5 px-3 object-center bg-gray-500 border-gray-500 rounded-sm border-4 text-black font-bold hover:h-10 hover:w-36'>Github Repo</button>
+                <article dangerouslySetInnerHTML={{__html: project.body}} className="mb-5 "/>
+                <a href= {project.github} className='px-3 py-1 object-center bg-gray-500 border-gray-500 rounded-md border-4 text-black font-bold hover:h-10 hover:w-36'>Github Repo</a>
               </div>
-              <Image className="w-92 mt-5 w-full lg:h-40 " src = {project.image} alt = "face detect" width = {400} height = {200}></Image>
+              <img className="w-full lg:w-1/2 lg:h-1/2" src = {project.image} alt = "face detect"></img>
 
             </li>
           ))}

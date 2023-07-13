@@ -6,3 +6,13 @@
 body {
   background-color: black
 }
+
+h2{
+  font-weight: 800;
+  color: gray;
+  font-size: xx-large;
+}
+
+h5{
+  font-weight: 700;
+}
