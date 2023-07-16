@@ -16,7 +16,7 @@ export default async function ProjectsPage(){
                 <article dangerouslySetInnerHTML={{__html: project.body}} className="mb-5 "/>
                 <a href= {project.github} className='px-3 py-1 object-center bg-gray-500 border-gray-500 rounded-md border-4 text-black font-bold hover:h-10 hover:w-36'>Github Repo</a>
               </div>
-              <img className="w-full lg:w-1/2 lg:h-1/2" src = {project.image} alt = "face detect"></img>
+              <Image className="w-full lg:w-1/2 lg:h-1/2" src = {project.image} alt = "face detect"></Image>
 
             </li>
           ))}
