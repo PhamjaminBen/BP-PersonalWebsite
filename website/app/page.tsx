@@ -5,7 +5,7 @@ export default function Home() {
     <main className=" text-white">
       <div className="text-5xl text-center font-inter pb-20 pt-5 space-y-5">
         <h1 className='transition-opactiy'>Hi, I&apos;m Ben Pham </h1>
-        <h1>I'm a student developer</h1>
+        <h1>I&apos;m a student developer</h1>
       </div>
       <h1 className='text-5xl w-full text-center p-10'>About Me</h1>
       <div className='flex flex-col  items-center lg:flex-row pb-32'>
