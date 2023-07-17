@@ -30,7 +30,7 @@ export default function Home() {
           which has allowed me to acquire new skills and refine existing ones. 
           In my free time, I find joy in playing volleyball and keeping up with the NBA.
           <br/><br/>
-          <a href = "benphamresume.pdf" target = "_blank" className='px-3 object-center bg-white border-white rounded-lg border-4 text-black font-bold hover:bg-black hover:text-white'>View Resume</a>
+          <a href = "/benphamresume.pdf" target = "_blank" className='px-3 object-center bg-white border-white rounded-lg border-4 text-black font-bold hover:bg-black hover:text-white'>View Resume</a>
           </p>
       </div>
     </main>
