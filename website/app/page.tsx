@@ -12,8 +12,8 @@ export default function Home() {
         <Image 
           src={"/images/portrait.jpeg"} 
           alt='portrait' 
-          width={400} height={400} 
-          className='pl-0 lg:pl-20'
+          width={380} height={380} 
+          className='mx-5 lg:m-0 lg:ml-20'
         />
         <p className="text-lg text-white text-left m-5 md:mx-20 ">I am a current student pursuing a bachelors
           in computer science at the University of California, Irvine. I&apos;m an aspiring full-stack 
