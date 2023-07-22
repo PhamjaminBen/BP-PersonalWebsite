@@ -31,7 +31,7 @@ export default function Home() {
           which has allowed me to acquire new skills and refine existing ones. 
           In my free time, I find joy in playing volleyball and keeping up with the NBA.
           <br/><br/>
-          <Link href = "/resume" className='px-3 object-center bg-white border-white rounded-lg border-4 text-black font-bold hover:bg-black hover:text-white'>View Resume</Link>
+          <Link href = "https://drive.google.com/file/d/1t_WPHCq14QLpYhL3CTabuQ8PGuewl3Ak/view?usp=sharing" className='px-3 object-center bg-white border-white rounded-lg border-4 text-black font-bold hover:bg-black hover:text-white'>View Resume</Link>
           </p>
       </div>
     </main>
