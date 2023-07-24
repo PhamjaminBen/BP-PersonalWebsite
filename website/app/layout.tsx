@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Rubik } from 'next/font/google'
 import NavBar from '@/components/navbar'
 import Image from 'next/image'
 import githublogo from "@/public/images/githubicon.png"
@@ -10,6 +10,12 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 })
+
+const rubik = Rubik({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 
 export const metadata: Metadata = {
   title: 'Ben Pham | Developer',
@@ -22,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-     <html lang="en" className={inter.className}>
-      <body  className="bg-black flex flex-col min-h-screen text-white">
+     <html lang="en" className={rubik.className}>
+      <body  className="bg-slate-800 flex flex-col min-h-screen text-slate-400">
         <header className='sticky'>
           <NavBar/>
         </header>

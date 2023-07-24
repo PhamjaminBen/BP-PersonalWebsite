@@ -6,15 +6,19 @@ export default async function ProjectsPage(){
   console.log(projects)
   return(
     <>
-      <h1 className="text-5xl text-center font-inter pt-5 space-y-5 mb-16">Projects</h1>
+      <h1 className="text-5xl text-center font-inter font-extrabold text-indigo-300 pt-5 space-y-5 mb-16">Projects</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-y-16 gap-x-0 mb-10">
           {projects.map((project,index) => (
             <>
               <div className=" mx-8 lg:ml-16">
-                <h2 className="text-xl mr-10">{project.title}</h2>
+                <h2 className="text-indigo-500 text-xl mr-10">{project.title}</h2>
                 <br/>
                 <article dangerouslySetInnerHTML={{__html: project.body}} className="mb-5 "/>
-                <a href= {project.github} className='px-3 py-1 object-center bg-gray-500 border-gray-500 rounded-md border-4 text-black font-bold hover:h-10 hover:w-36'>Github Repo</a>
+                <a href= {project.github}>
+                   <button className ="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md px-2 py-1 font-bold">
+                    View Source Code (Github)
+                  </button>
+                </a>
               </div>
               <div className="mx-8 mb-12 lg:mr-16 ">
                 <Image className="w-full" src = {project.image} alt = "face detect" width={1000} height={1000}></Image>
