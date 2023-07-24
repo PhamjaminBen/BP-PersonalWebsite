@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="">
-      <div className="text-5xl text-center font-inter pb-20 pt-5 space-y-5">
-        <h1 className='transition-opactiy'>Hi, I&apos;m Ben Pham </h1>
+      <div className="text-5xl text-center font-inter mb-12 pt-5 space-y-5 font-bold text-white">
+        <h1 className='mb-10'>Hi, I&apos;m Ben Pham </h1>
         <h1>I&apos;m a student developer</h1>
       </div>
       <h1 className='text-5xl text-white text-bold w-full text-center p-10'>About Me</h1>

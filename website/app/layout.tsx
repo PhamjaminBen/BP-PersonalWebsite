@@ -36,8 +36,8 @@ export default function RootLayout({
         <main className="grow py-3">
           {children}
         </main>
-        <footer>
-          <div className='container m-auto grid grid-cols-5 lg:grid-cols-7 gap-10 bg-gray-600 border-t h-32 pt-8'>
+        <footer className=' bg-indigo-500'>
+          <div className='container m-auto grid grid-cols-5 lg:grid-cols-7 gap-10 border-gray-500 h-32 w-screen  pt-8'>
             <div className='lg:col-span-2'></div>
             <a href="https://github.com/PhamjaminBen" className="">
               <Image  src = {githublogo} 
