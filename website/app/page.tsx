@@ -1,22 +1,52 @@
+"use client";
 import Image from 'next/image'
 import Link from 'next/link'
+import gsap from 'gsap'
+import {useEffect} from 'react'
+import SplitType from 'split-type'
 
 export default function Home() {
+  useEffect( () => {
+    let text = new SplitType('#title');
+    let chars = document.querySelectorAll('.word');
+
+    for (let i = 0; i < chars.length; i++){
+      chars[i].classList.add('translate-y-full')
+    }
+
+    gsap.to('.word', {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.04,
+      duration: 0.5
+    })
+    
+    // setTimeout(() => {
+    //   gsap.to('#portrait', {
+    //     x:0 ,
+    //     duration: 1.0
+    //   })
+    // }, 1000);
+
+  })
   return (
+    <>
     <main className="">
-      <div className="text-5xl text-center font-inter mb-12 pt-5 space-y-5 font-bold text-white">
-        <h1 className='mb-10'>Hi, I&apos;m Ben Pham </h1>
-        <h1>I&apos;m a student developer</h1>
+      <div className="text-5xl  text-center font-inter mb-8 mt-5 space-y-5 font-bold text-white">
+        <h1 className='mb-10' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%);" }}>
+          Hi, I&apos;m Ben Pham, I&apos;m a student developer.
+        </h1>
       </div>
       <h1 className='text-5xl text-white text-bold w-full text-center p-10'>About Me</h1>
-      <div className='flex flex-col  items-center lg:flex-row pb-32'>
+      <div className='flex flex-col  items-center xl:flex-row pb-32'>
         <Image 
+          id = "portrait"
           src={"/images/portrait.jpeg"} 
           alt='portrait' 
-          width={360} height={360} 
-          className='mx-5 lg:m-0 lg:ml-20'
+          width={400} height={400} 
+          className='m-auto xl:ml-32'
         />
-        <p className="text-lg text-left m-5 md:mx-40 ">I am a current student pursuing a bachelors
+        <p id="bio" className="text-lg text-left m-5 md:mx-20 xl:pr-40 xl:ml-32 ">I am a current student pursuing a bachelors
           in computer science at the University of California, Irvine. I&apos;m an aspiring full-stack 
           developer with a wide range of skills and expertise. 
           I am actively seeking experiences that offer opportunities for professional growth and personal development, 
@@ -39,5 +69,6 @@ export default function Home() {
           </p>
       </div>
     </main>
+    </>
   )
 }
