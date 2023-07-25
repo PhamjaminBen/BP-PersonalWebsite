@@ -33,8 +33,8 @@ export default function Home() {
     <>
     <main className="">
       <div className="text-5xl  text-center font-inter mb-8 mt-5 space-y-5 font-bold text-white">
-        <h1 className='mb-10' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%);" }}>
-          Hi, I&apos;m Ben Pham, I&apos;m a student developer.
+        <h1 className='mx-2 sm:mx-0 my-10' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%);" }}>
+          My name is Ben Pham. I&apos;m a student developer.
         </h1>
       </div>
       <h1 className='text-5xl text-white text-bold w-full text-center p-10'>About Me</h1>
@@ -64,6 +64,11 @@ export default function Home() {
           <Link href = "https://drive.google.com/file/d/1t_WPHCq14QLpYhL3CTabuQ8PGuewl3Ak/view?usp=sharing">
               <button className ="text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md px-2 py-1 font-bold">
                 View Resume
+              </button>
+          </Link>
+          <Link href = "/projects">
+              <button className ="text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md ml-5 px-2 py-1 font-bold">
+                View Projects
               </button>
           </Link>
           </p>
