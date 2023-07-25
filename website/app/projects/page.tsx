@@ -4,6 +4,7 @@ import Image from "next/image"
 import gsap from 'gsap'
 import {useEffect, useState} from 'react'
 
+
 export default async function ProjectsPage(){
   // const [projects, setProjects] = useState([{}])
   
@@ -30,11 +31,11 @@ export default async function ProjectsPage(){
           {projects.map(project => (
             <>
               <div className=" mx-8 lg:ml-16">
-                <h2 className="text-white text-xl mr-10">{project.title}</h2>
+                <h2 className="text-white  text-2xl mr-10">{project.title}</h2>
                 <br/>
                 <article dangerouslySetInnerHTML={{__html: project.body}} className="projectArticle mb-5"/>
                 <a href= {project.github}>
-                   <button className ="transition ease-in-out delay-150 text-white bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md px-2 py-1 font-bold">
+                   <button className ="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md px-2 py-1 font-bold">
                     View Source Code (Github)
                   </button>
                 </a>
