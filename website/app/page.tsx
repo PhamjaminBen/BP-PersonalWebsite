@@ -48,12 +48,12 @@ export default function Home() {
   return (
     <>
     <main className="">
-      <div className="text-5xl  text-center font-inter mb-8 mt-5 space-y-5 font-bold text-white">
+      <div className="text-5xl  text-center font-inter mb-8 mt-5 space-y-5 font-bold">
         <h1 className='mx-2 sm:mx-0 my-10' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%);" }}>
           My name is Ben Pham. I&apos;m a student developer.
         </h1>
       </div>
-      <h1 id = "aboutTitle" className='translate-y-32 opacity-0 text-5xl text-white text-bold w-full text-center p-10'>About Me</h1>
+      <h1 id = "aboutTitle" className='translate-y-32 opacity-0 text-5xl text-bold w-full text-center p-10'>About Me</h1>
       <div className='flex flex-col  items-center xl:flex-row pb-32'>
         <Image 
           id = "portrait"

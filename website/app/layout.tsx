@@ -28,14 +28,14 @@ export default function RootLayout({
 }) {
   return (
      <html lang="en" className={rubik.className}>
-      <body  className="bg-slate-800 flex flex-col min-h-screen text-slate-400">
-        <header className='sticky'>
+      <body  className="bg-slate-100 flex flex-col min-h-screen text-slate-900">
+        <header className='sticky z-50 top-0'>
           <NavBar/>
         </header>
-        <main className="grow py-3">
+        <main className="grow py-3 relative">
           {children}
         </main>
-        <footer className=' bg-indigo-500'>
+        <footer className=' bg-slate-700'>
           <Footer/>
         </footer>
       </body>

@@ -26,12 +26,12 @@ export default async function ProjectsPage(){
   // })
   return(
     <>
-      <h1 className="text-5xl text-center font-inter font-extrabold text-white pt-5 space-y-5 mb-16">Projects</h1>
+      <h1 className="text-5xl text-center font-inter font-extrabold pt-5 space-y-5 mb-16">Projects</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-y-16 gap-x-0 mb-10">
           {projects.map(project => (
             <>
               <div className=" mx-8 lg:ml-16">
-                <h2 className="text-white  text-2xl mr-10">{project.title}</h2>
+                <h2 className="font-extrabold text-2xl mr-10">{project.title}</h2>
                 <br/>
                 <article dangerouslySetInnerHTML={{__html: project.body}} className="projectArticle mb-5"/>
                 <a href= {project.github}>
