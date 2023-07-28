@@ -7,21 +7,23 @@ import SplitType from 'split-type'
 
 export default function Home() {
   useEffect( () => {
-    let text = new SplitType('#title');
-    let chars = document.querySelectorAll('.word');
+    let chars = document.querySelectorAll('.icon');
 
     for (let i = 0; i < chars.length; i++){
       chars[i].classList.add('translate-y-full')
       chars[i].classList.add('opacity-0')
     }
 
-    gsap.to('.word', {
-      y: 0,
-      opacity: 1,
-      stagger: 0.05,
-      delay: 0.06,
-      duration: 0.5
-    })
+    setTimeout(() => {
+      gsap.to('.icon', {
+        y: 0,
+        opacity: 1,
+        stagger: 0.1,
+        delay: 0.1,
+        duration: 0.5
+      })
+    },1000)
+
     
     setTimeout(() => {
       gsap.to('#aboutTitle', {
@@ -29,7 +31,7 @@ export default function Home() {
         opacity: 1,
         duration: 1.0
       })
-    }, 500)
+    }, 0)
 
     setTimeout(() => {
       gsap.to('#portrait', {
@@ -44,50 +46,94 @@ export default function Home() {
       })
     }, 1000);
 
+    setTimeout(() => {
+      gsap.to('#skills', {
+        y: 0,
+        opacity: 1,
+        duration: 1
+      })
+    },1000)
+
   })
   return (
     <>
-    <main className="">
-      <div className="text-5xl  text-center font-inter mb-8 mt-5 space-y-5 font-bold">
-        <h1 className='mx-2 sm:mx-0 my-10' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%);" }}>
-          My name is Ben Pham. I&apos;m a student developer.
-        </h1>
-      </div>
-      <h1 id = "aboutTitle" className='translate-y-32 opacity-0 text-5xl text-bold w-full text-center p-10'>About Me</h1>
-      <div className='flex flex-col  items-center xl:flex-row pb-32'>
-        <Image 
-          id = "portrait"
-          src={"/images/portrait.jpeg"} 
-          alt='portrait' 
-          width={400} height={400} 
-          className='m-auto xl:ml-32 -translate-x-96 opacity-0'
-        />
-        <p id="bio" className="opacity-0 translate-x-96 text-lg text-left m-5 md:mx-20 xl:pr-40 xl:ml-32 ">I am a current student pursuing a bachelors
-          in computer science at the University of California, Irvine. I&apos;m an aspiring full-stack 
-          developer with a wide range of skills and expertise. 
-          I am actively seeking experiences that offer opportunities for professional growth and personal development, 
-          allowing me to expand my knowledge and learn new things.
-          <br/><br/>
-          My goal is to assume leadership roles and collaborate with a team to achieve exceptional
-          outcomes. I take pride in my punctuality, ability to meet deadlines, and constant efforts 
-          to enhance my presentation and analytical skills in different environments. 
-          Being based in the Greater Los Angeles area has provided me with valuable experiences and 
-          opportunities for personal growth. I have had the privilege of connecting with 
-          like-minded individuals who are also commited to software development,
-          which has allowed me to acquire new skills and refine existing ones. 
-          In my free time, I find joy in playing volleyball and keeping up with the NBA.
-          <br/><br/>
-          <Link href = "https://drive.google.com/file/d/1t_WPHCq14QLpYhL3CTabuQ8PGuewl3Ak/view?usp=sharing">
-              <button className ="text-white transition ease-in-out delay-150 bg-blue-500 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md px-2 py-1 font-bold">
-                View Resume
-              </button>
-          </Link>
-          <Link href = "/projects">
-              <button className ="text-white transition ease-in-out delay-150 bg-blue-500 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md ml-5 px-2 py-1 font-bold">
-                View Projects
-              </button>
-          </Link>
-          </p>
+    <main className = "m-auto  pt-40 pb-36">
+      {/* <div className="text-5xl  text-center font-inter mb-8 mt-5 space-y-5 font-bold">
+      </div> */}
+      {/* <h1 id = "aboutTitle" className='translate-y-32 opacity-0 text-5xl text-bold w-full text-center p-10'>About Me</h1> */}
+      <div className = "content max-w-5xl m-auto px-8">
+        <div className='flex flex-col  content-center space-y-12 pb-16 lg:flex-row lg:pb-32 lg:space-x-40 lg:space-y-0'>
+          <Image 
+            id = "portrait"
+            src={"/images/portrait.jpeg"} 
+            alt='portrait' 
+            width={500} height={500} 
+            className='m-auto -translate-x-96 opacity-0 overflow-hidden rounded-full h-64 w-64 lg:w-3/5 lg:h-3/5'
+          />
+          <div id="bio" className="opacity-0 translate-x-96 text-lg lg:align-top">
+            <h1 className='text-5xl mb-10 font-bold text-center lg:text-left' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%);" }}>
+            Hi, I&apos;m Ben Pham. I&apos;m a student developer.👋🏼
+            </h1>
+            <p className='text-center lg:text-left'>Hi, I'm Ben Pham. A passionate developer currently studying at UCI and  based in Santa Clara, California. 📍</p>
+            {/* I am a current student pursuing a bachelors
+            in computer science at the University of California, Irvine. I&apos;m an aspiring full-stack 
+            developer with a wide range of skills and expertise. 
+            I am actively seeking experiences that offer opportunities for professional growth and personal development, 
+            allowing me to expand my knowledge and learn new things.
+            <br/><br/>
+            My goal is to assume leadership roles and collaborate with a team to achieve exceptional
+            outcomes. I take pride in my punctuality, ability to meet deadlines, and constant efforts 
+            to enhance my presentation and analytical skills in different environments. 
+            Being based in the Greater Los Angeles area has provided me with valuable experiences and 
+            opportunities for personal growth. I have had the privilege of connecting with 
+            like-minded individuals who are also commited to software development,
+            which has allowed me to acquire new skills and refine existing ones. 
+            In my free time, I find joy in playing volleyball and keeping up with the NBA. */}
+            <br/><br/>
+            <div className='buttons m-auto lg:m-0 w-fit'>
+              <Link href = "https://drive.google.com/file/d/1t_WPHCq14QLpYhL3CTabuQ8PGuewl3Ak/view?usp=sharing">
+                  <button className ="text-white transition ease-in-out delay-150 bg-blue-500 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md px-2 py-1 font-bold">
+                    Resume
+                  </button>
+              </Link>
+              <Link href = "/projects">
+                  <button className ="text-white transition ease-in-out delay-150 bg-blue-500 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md ml-5 px-2 py-1 font-bold">
+                    Projects
+                  </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div id= "skills" className='skills flex flex-col flex-wrap lg:flex-row opacity-0 translate-y-5'>
+          <div className='text-xl font-semibold'>
+            <h3 className=' w-fit lg:pr-10 border-black border-solid border-b-2 text-center m-auto pb-2 lg:border-r-2 lg:border-b-0 lg:mr-8 lg:mt-10'>Tech Stack</h3>
+          </div>
+          <div id = "icons">
+            <ul className='stack-icons flex flex-wrap justify-center space-x-7 space-y-6'>
+              <li  className="rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center translate-y-6">
+                <img  className = "h-10 w-10" src="icons/html.svg" alt="html5" />
+              </li>
+              <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
+                <img  className = "h-10 w-10" src="icons/css.svg" alt="html5" />
+              </li>
+              <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
+                <img  className = "h-10 w-10" src="icons/javascript.svg" alt="html5" />
+              </li>
+              <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
+                <img  className = "h-10 w-10" src="icons/react.svg" alt="html5" />
+              </li>
+              <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
+                <img  className = "h-10 w-10" src="icons/tailwind.svg" alt="html5" />
+              </li>
+              <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
+                <img  className = "h-10 w-10" src="icons/mongo.svg" alt="html5" />
+              </li>
+              <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
+                <img  className = "h-10 w-10" src="icons/next.svg" alt="html5" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
     </>

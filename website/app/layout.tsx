@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
      <html lang="en" className={rubik.className}>
-      <body  className="bg-slate-100 flex flex-col min-h-screen text-slate-900">
+      <body  className="bg-gray-100 flex flex-col min-h-screen text-slate-900">
         <header className='sticky z-50 top-0'>
           <NavBar/>
         </header>

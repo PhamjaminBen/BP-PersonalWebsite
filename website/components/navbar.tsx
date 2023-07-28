@@ -7,6 +7,9 @@ export default function NavBar() {
           <Link href="/" className="font-extrabold hover:underline text-xl">Ben.dev</Link>
         </li>
         <li className="ml-auto">
+          <Link href="/" className="hover:underline">Home</Link>
+        </li>
+        <li>
           <Link href="/projects" className="hover:underline">Projects</Link>
         </li>
         <li>
