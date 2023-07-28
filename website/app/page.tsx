@@ -71,10 +71,10 @@ export default function Home() {
             className='m-auto -translate-x-96 opacity-0 overflow-hidden rounded-full h-64 w-64 lg:w-3/5 lg:h-3/5'
           />
           <div id="bio" className="opacity-0 translate-x-96 text-lg lg:align-top">
-            <h1 className='text-5xl mb-10 font-bold text-center lg:text-left' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%);" }}>
-            Hi, I&apos;m Ben Pham. I&apos;m a student developer.👋🏼
+            <h1 className='text-5xl mb-10 font-bold text-center lg:text-left leading-relaxed' id = "title" style = {{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+            Aspiring front-end developer👋🏼
             </h1>
-            <p className='text-center lg:text-left'>Hi, I'm Ben Pham. A passionate developer currently studying at UCI and  based in Santa Clara, California. 📍</p>
+            <p className='text-center lg:text-left'>Hi, I&apos;m Ben Pham. A passionate developer currently studying at UCI and  based in Santa Clara, California. 📍</p>
             {/* I am a current student pursuing a bachelors
             in computer science at the University of California, Irvine. I&apos;m an aspiring full-stack 
             developer with a wide range of skills and expertise. 
