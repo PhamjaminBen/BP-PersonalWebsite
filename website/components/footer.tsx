@@ -4,7 +4,7 @@ import linkedinlogo from "@/public/images/linkedinlogo.png"
 
 export default function Footer(){
   return(
-    <div className='container m-auto grid grid-cols-5 lg:grid-cols-7 gap-1 h-32 w-screen  pt-8'>
+    <div className='container m-auto flex justify-center space-x-10 h-32 w-screen  pt-8'>
               <div className='lg:col-span-2'></div>
               <a href="https://github.com/PhamjaminBen" className="">
                 <Image  src = {githublogo} 

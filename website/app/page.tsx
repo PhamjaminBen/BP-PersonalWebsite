@@ -111,25 +111,25 @@ export default function Home() {
           <div id = "icons">
             <ul className='stack-icons flex flex-wrap justify-center space-x-7 space-y-6'>
               <li  className="rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center translate-y-6">
-                <img  className = "h-10 w-10" src="icons/html.svg" alt="html5" />
+                <img  className = "h-10 w-10" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"/>
               </li>
               <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
-                <img  className = "h-10 w-10" src="icons/css.svg" alt="html5" />
+                <img  className = "h-10 w-10" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"/>
               </li>
               <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
-                <img  className = "h-10 w-10" src="icons/javascript.svg" alt="html5" />
+                <img  className = "h-10 w-10" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"/>
               </li>
               <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
-                <img  className = "h-10 w-10" src="icons/react.svg" alt="html5" />
+                <img  className = "h-10 w-10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207"/>
               </li>
               <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
-                <img  className = "h-10 w-10" src="icons/tailwind.svg" alt="html5" />
+                <img  className = "h-10 w-10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042"/>
               </li>
               <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
-                <img  className = "h-10 w-10" src="icons/mongo.svg" alt="html5" />
+                <img  className = "h-10 w-10" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/>
               </li>
               <li  className="icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center">
-                <img  className = "h-10 w-10" src="icons/next.svg" alt="html5" />
+                <img  className = "h-10 w-10" src="https://www.svgrepo.com/show/354113/nextjs-icon.svg"/>
               </li>
             </ul>
           </div>
