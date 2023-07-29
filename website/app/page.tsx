@@ -91,8 +91,8 @@ export default function Home() {
             In my free time, I find joy in playing volleyball and keeping up with the NBA. */}
             <br/><br/>
             <div className='buttons m-auto lg:m-0 w-fit'>
-              <Link href = "https://drive.google.com/file/d/1t_WPHCq14QLpYhL3CTabuQ8PGuewl3Ak/view?usp=sharing">
-                  <button className ="text-white transition ease-in-out delay-150 bg-blue-500 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-md px-2 py-1 font-bold">
+              <Link target="_blank" href = "https://drive.google.com/file/d/1t_WPHCq14QLpYhL3CTabuQ8PGuewl3Ak/view?usp=sharing">
+                  <button className = " hover:text-blue-500 px-2 py-1 font-bold">
                     Resume
                   </button>
               </Link>
