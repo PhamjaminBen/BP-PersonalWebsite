@@ -29,8 +29,8 @@ export default async function ProjectsPage(){
       <h1 className="text-5xl text-center font-inter font-extrabold pt-5 space-y-5 mb-16">Projects</h1>
         <div className="m-auto max-w-5xl gap-y-8 lg:gap-y-16 mb-10">
 
-          {projects.map(project => (
-            <div className="bg-white shadow-xl rounded-3xl py-10 mb-10">
+          {projects.map((project,index) => (
+            <div key = {index} className="bg-white shadow-xl rounded-3xl py-10 mb-10">
               <div className="mx-8 lg:ml-16">
                 <h2 className="font-extrabold text-2xl">{project.title}</h2>
                 <br/>
