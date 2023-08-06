@@ -12,9 +12,6 @@ export default function NavBar() {
         <li>
           <Link href="/projects" className="hover:underline">Projects</Link>
         </li>
-        <li>
-          <Link href="/contact" className="hover:underline">Contact</Link>
-        </li>
       </ul>
   </nav>
   )
