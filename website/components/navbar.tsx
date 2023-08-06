@@ -5,7 +5,7 @@ export default function NavBar() {
 			<div id='content' className='max-w-6xl py-5 px-5 m-auto text-lg'>
 				<ul className='flex gap-8'>
 					<li>
-						<Link href='/' className='font-extrabold hover:underline text-xl'>
+						<Link href='/' className='font-extrabold text-xl'>
 							Ben.dev
 						</Link>
 					</li>
