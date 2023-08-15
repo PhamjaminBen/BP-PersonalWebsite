@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 export default function NavBar() {
 	return (
@@ -5,19 +6,40 @@ export default function NavBar() {
 			<div id='content' className='max-w-6xl py-5 px-5 m-auto text-lg'>
 				<ul className='flex gap-8'>
 					<li>
-						<Link href='/' className='font-extrabold text-xl'>
+						<button
+							onClick={() =>
+								document
+									.getElementById("main")
+									?.scrollIntoView({ behavior: "smooth" })
+							}
+							className='font-extrabold hover:underline text-xl'
+						>
 							Ben.dev
-						</Link>
+						</button>
 					</li>
 					<li className='ml-auto'>
-						<Link href='/' className='hover:underline'>
+						<button
+							onClick={() =>
+								document
+									.getElementById("main")
+									?.scrollIntoView({ behavior: "smooth" })
+							}
+							className='hover:underline'
+						>
 							Home
-						</Link>
+						</button>
 					</li>
 					<li>
-						<Link href='/projects' className='hover:underline'>
+						<button
+							onClick={() =>
+								document
+									.getElementById("projects")
+									?.scrollIntoView({ behavior: "smooth" })
+							}
+							className='hover:underline'
+						>
 							Projects
-						</Link>
+						</button>
 					</li>
 				</ul>
 			</div>

@@ -20,6 +20,7 @@
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "formidable": "^3.5.0",
+    "framer-motion": "^10.15.2",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.2",
     "marked": "^5.1.1",
