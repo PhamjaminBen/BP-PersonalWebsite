@@ -1,20 +1,15 @@
 "use client";
 import { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
+import { projects } from "@/lib/data";
 
-interface Project {
-	title: string;
-	image: string;
-	github: string;
-	body: string;
-	languages: string;
-}
+type Project = (typeof projects)[number];
 
 export default function Project(project: Project) {
 	const ref = useRef<HTMLElement>(null);
 	const { scrollYProgress } = useScroll({
 		target: ref,
-		offset: ["0 1", "1.33 1"],
+		offset: ["0 1", "1 1"],
 	});
 
 	return (
@@ -30,8 +25,17 @@ export default function Project(project: Project) {
 			<br />
 			<article className='projectArticle mb-5'>
 				<p>{project.body}</p>
-				<h5 className='mt-3 mb-1'>Languages and Resources used:</h5>
-				<p>{project.languages}</p>
+				{/* <h5 className='mt-3 mb-1'>Languages and Resources used:</h5> */}
+				<ul className='flex flex-wrap gap-2 pt-5 pb-2 lg:pb-0'>
+					{project.skills.map((skill, index) => (
+						<li
+							key={index}
+							className='text-white bg-slate-800 border border-black/[0.1] rounded-full px-5 py-2'
+						>
+							{skill}
+						</li>
+					))}
+				</ul>
 			</article>
 			<a
 				target='_blank'

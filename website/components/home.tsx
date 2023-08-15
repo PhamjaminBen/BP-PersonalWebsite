@@ -5,6 +5,9 @@ import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { motion } from "framer-motion";
+import { BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Home() {
 	const { ref, inView } = useInView({
@@ -46,25 +49,35 @@ export default function Home() {
 					</p>
 					<br />
 					<br />
-					<div className='buttons m-auto lg:m-0 space-x-4 w-fit'>
+					<div className='buttons m-auto lg:m-0 flex flex-row justify-center lg:justify-start gap-2 px-4 lg:px-0'>
 						<Link
+							download
+							href='/BenPhamResume.pdf'
+							className='text-sm sm:text-lg rounded-full bg-gray-900 text-white px-4 py-3 flex
+              items-center gap-2 hover:scale-110 active:scale-105 hover:bg-gray-950 transition-all'
+						>
+							Download Resume{" "}
+							<HiDownload className='opacity-70 group-hover:translate-y-5 transition' />
+						</Link>
+						{/* <a
 							target='_blank'
 							href='https://drive.google.com/file/d/1jvF4y0G7I-YdKC0CMimVbe-AEDaVjgqP/view?usp=sharing'
+							className='rounded-full bg-white text-gray-700 px-2 py-3 flex items-center gap-2'
 						>
-							<button className='border-2 border-solid border-black hover:text-white hover:bg-blue-600 px-2 py-1 font-bold'>
-								Resume
-							</button>
-						</Link>
-						<button
-							onClick={() =>
-								document
-									.getElementById("projects")
-									?.scrollIntoView({ behavior: "smooth" })
-							}
-							className=' border-2 border-solid border-black hover:text-white hover:bg-blue-600 px-2 py-1 font-bold'
+							Download Resume <HiDownload />
+						</a> */}
+						<a
+							href='https://www.linkedin.com/in/ben-pham-307a22149/'
+							className='bg-white rounded-full p-4 flex items-center gap-2 border border-black/10 text-gray-700 hover:scale-110 cursor-pointer active:scale-105 transition-all'
 						>
-							Projects
-						</button>
+							<BsLinkedin />
+						</a>
+						<a
+							href='https://github.com/PhamjaminBen'
+							className='bg-white rounded-full p-4 flex items-center gap-2 border border-black/10 text-gray-700 hover:scale-110 cursor-pointer active:scale-105 transition-all'
+						>
+							<FaGithubSquare />
+						</a>
 					</div>
 				</div>
 			</div>

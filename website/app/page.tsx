@@ -5,7 +5,7 @@ import ProjectsPage from "@/components/projects";
 import Home from "@/components/home";
 import Spacer from "@/components/sectionspacer";
 import About from "@/components/about";
-import { projects } from "@/lib/projects";
+import { projects } from "@/lib/data";
 import Skills from "@/components/skills";
 
 export default function Page() {

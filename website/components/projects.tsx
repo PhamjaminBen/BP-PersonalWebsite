@@ -1,7 +1,7 @@
 import Image from "next/image";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
-import { projects } from "@/lib/projects";
+import { projects } from "@/lib/data";
 import Project from "@/components/project";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
