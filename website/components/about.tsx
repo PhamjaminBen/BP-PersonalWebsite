@@ -47,7 +47,7 @@ export default function About() {
 					improve my skills through an internship or job.
 					<br></br>
 					<br></br>
-					When I'm not coding, I enjoy watching the NBA, playing the piano,
+					When I&apos;m not coding, I enjoy watching the NBA, playing the piano,
 					playing volleyball and basketball, and attending concerts featuring my
 					favorite hip-hop artists.
 				</p>
