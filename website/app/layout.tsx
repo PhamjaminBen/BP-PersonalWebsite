@@ -1,18 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Rubik } from "next/font/google";
+import { Roboto } from "next/font/google";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ActionSectionContextProvider from "@/context/active-section-context";
 
-const inter = Inter({
+const roboto = Roboto({
 	subsets: ["latin"],
 	display: "swap",
-});
-
-const rubik = Rubik({
-	subsets: ["latin"],
-	display: "swap",
+	weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +24,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='!scroll-smooth'>
 			<body
-				className={` ${rubik.className} bg-gray-100 flex flex-col min-h-screen text-slate-900`}
+				className={` ${roboto.className} bg-gray-100 flex flex-col min-h-screen text-slate-900`}
 			>
 				<ActionSectionContextProvider>
 					<NavBar />

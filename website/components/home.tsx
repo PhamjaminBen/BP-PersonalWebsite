@@ -59,13 +59,6 @@ export default function Home() {
 							Download Resume{" "}
 							<HiDownload className='opacity-70 group-hover:translate-y-5 transition' />
 						</Link>
-						{/* <a
-							target='_blank'
-							href='https://drive.google.com/file/d/1jvF4y0G7I-YdKC0CMimVbe-AEDaVjgqP/view?usp=sharing'
-							className='rounded-full bg-white text-gray-700 px-2 py-3 flex items-center gap-2'
-						>
-							Download Resume <HiDownload />
-						</a> */}
 						<a
 							href='https://www.linkedin.com/in/ben-pham-307a22149/'
 							className='bg-white rounded-full p-4 flex items-center gap-2 border border-black/10 text-gray-700 hover:scale-110 cursor-pointer active:scale-105 transition-all'
