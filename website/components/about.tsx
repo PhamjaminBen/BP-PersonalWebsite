@@ -2,27 +2,44 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useEffect } from "react";
 
 export default function About() {
-	const ref = useRef<HTMLElement>(null);
+	const { ref, inView } = useInView({
+		threshold: 0.75,
+	});
+	const { setActiveSection } = useActiveSectionContext();
+
+	useEffect(() => {
+		if (inView) {
+			setActiveSection("About");
+		}
+	}, [inView, setActiveSection]);
+
+	const animationRef = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
-		target: ref,
+		target: animationRef,
 		offset: ["0 1", "0.75 1"],
 	});
 	return (
 		<motion.section
 			ref={ref}
-			style={{
-				scale: scrollYProgress,
-				opacity: scrollYProgress,
-			}}
 			id='about'
-			className='m-auto max-w-6xl px-8 py-32 bg-white scroll-mt-32'
+			className='m-auto max-w-6xl px-8 py-24 bg-white scroll-mt-28'
 		>
 			<h1 className='text-5xl text-center font-inter font-extrabold pt-5 mb-16'>
 				About Me
 			</h1>
-			<div className='flex flex-col lg:flex-row items-center lg:space-x-16 space-y-16 lg:space-y-0'>
+			<motion.div
+				ref={animationRef}
+				style={{
+					scale: scrollYProgress,
+					opacity: scrollYProgress,
+				}}
+				className='flex flex-col lg:flex-row items-center lg:space-x-16 space-y-16 lg:space-y-0'
+			>
 				<Image
 					className='h-80 w-96 rounded-2xl'
 					src='/images/desk.png'
@@ -51,7 +68,7 @@ export default function About() {
 					playing volleyball and basketball, and attending concerts featuring my
 					favorite hip-hop artists.
 				</p>
-			</div>
+			</motion.div>
 		</motion.section>
 	);
 }

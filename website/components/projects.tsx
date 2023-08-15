@@ -3,10 +3,24 @@ import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import { projects } from "@/lib/projects";
 import Project from "@/components/project";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { motion } from "framer-motion";
 
 const ProjectsPage = () => {
+	const { ref, inView } = useInView({
+		threshold: 0.5,
+	});
+	const { setActiveSection } = useActiveSectionContext();
+
+	useEffect(() => {
+		if (inView) {
+			setActiveSection("Projects");
+		}
+	}, [inView, setActiveSection]);
+
 	return (
-		<div id='projects' className='pt-16'>
+		<motion.div id='projects' className='pt-16 scroll-mt-24' ref={ref}>
 			<h1 className='text-5xl text-center font-inter font-extrabold pt-5 space-y-5 mb-16'>
 				Projects
 			</h1>
@@ -17,7 +31,7 @@ const ProjectsPage = () => {
 					</React.Fragment>
 				))}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

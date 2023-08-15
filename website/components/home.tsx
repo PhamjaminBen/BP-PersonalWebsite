@@ -1,11 +1,27 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { motion } from "framer-motion";
 
-export default function Profile() {
+export default function Home() {
+	const { ref, inView } = useInView({
+		threshold: 0.75,
+	});
+	const { setActiveSection } = useActiveSectionContext();
+
+	useEffect(() => {
+		if (inView) {
+			setActiveSection("Home");
+		}
+	}, [inView, setActiveSection]);
+
 	return (
-		<section className='pb-32'>
+		<motion.section className='pb-32 scroll-mt-64' id='home' ref={ref}>
 			<div
-				id='profile'
+				id='photointro'
 				className='max-w-5xl px-8 m-auto flex flex-col  content-center space-y-12 pb-16 lg:flex-row lg:pb-32 lg:space-x-40 lg:space-y-0 '
 			>
 				<Image
@@ -25,23 +41,9 @@ export default function Profile() {
 						Aspiring full-stack developer👋🏼
 					</h1>
 					<p className='text-center lg:text-left'>
-						Hi, I&apos;m Ben Pham. A passionate developer currently studying at
+						Hi, I&apos;m Ben Pham, a passionate developer currently studying at
 						UCI and based in Santa Clara, California. 📍
 					</p>
-					{/* I am a current student pursuing a bachelors
-            in computer science at the University of California, Irvine. I&apos;m an aspiring full-stack 
-            developer with a wide range of skills and expertise. 
-            I am actively seeking experiences that offer opportunities for professional growth and personal development, 
-            allowing me to expand my knowledge and learn new things.
-            <br/><br/>
-            My goal is to assume leadership roles and collaborate with a team to achieve exceptional
-            outcomes. I take pride in my punctuality, ability to meet deadlines, and constant efforts 
-            to enhance my presentation and analytical skills in different environments. 
-            Being based in the Greater Los Angeles area has provided me with valuable experiences and 
-            opportunities for personal growth. I have had the privilege of connecting with 
-            like-minded individuals who are also committed to software development,
-            which has allowed me to acquire new skills and refine existing ones. 
-            In my free time, I find joy in playing volleyball and keeping up with the NBA. */}
 					<br />
 					<br />
 					<div className='buttons m-auto lg:m-0 space-x-4 w-fit'>
@@ -66,9 +68,10 @@ export default function Profile() {
 					</div>
 				</div>
 			</div>
+
 			<div
 				id='skills'
-				className='skills flex flex-col flex-wrap max-w-5xl px-8 m-auto lg:flex-row opacity-0 translate-y-5'
+				className='skills flex flex-col flex-wrap max-w-5xl px-8 pb-24 m-auto lg:flex-row opacity-0 translate-y-5'
 			>
 				<div className='text-xl font-semibold'>
 					<h3 className=' w-fit lg:pr-10 border-black border-solid border-b-2 text-center m-auto pb-2 lg:border-r-2 lg:border-b-0 lg:mr-8 lg:mt-10'>
@@ -122,6 +125,6 @@ export default function Profile() {
 					</ul>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }

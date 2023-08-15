@@ -2,12 +2,12 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 import ProjectsPage from "@/components/projects";
-import Profile from "@/components/profile";
+import Home from "@/components/home";
 import Spacer from "@/components/sectionspacer";
 import About from "@/components/about";
 import { projects } from "@/lib/projects";
 
-export default function Home() {
+export default function Page() {
 	useEffect(() => {
 		let chars = document.querySelectorAll(".icon");
 
@@ -60,7 +60,7 @@ export default function Home() {
 		<>
 			<main id='main' className='m-auto  pt-40 pb-36'>
 				<div className='content w=full m-auto'>
-					<Profile />
+					<Home />
 					<div className='bg-white'>
 						<About />
 					</div>
