@@ -3,10 +3,10 @@
 // import gsap from "gsap";
 // import { useEffect, useState } from "react";
 
-// export default async function ProjectsPage() {
-// 	let projects = await getProjects();
+export default async function ProjectsPage() {
+	// let projects = await getProjects();
 
-// 	return (
+	return <></>
 // 		<>
 // 			<h1 className='text-5xl text-center font-inter font-extrabold pt-5 space-y-5 mb-16'>
 // 				Projects
