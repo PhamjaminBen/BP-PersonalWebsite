@@ -61,7 +61,7 @@ export default function Home() {
 				<div className='content max-w-5xl m-auto px-8'>
 					<Profile />
 					<Spacer />
-					<ProjectsPage projects={...projects} />
+					<ProjectsPage />
 				</div>
 			</main>
 		</>
