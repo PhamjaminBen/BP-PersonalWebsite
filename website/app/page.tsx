@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import ProjectsPage from "@/components/projects";
 import Profile from "@/components/profile";
 import Spacer from "@/components/sectionspacer";
+import About from "@/components/about";
 import { projects } from "@/lib/projects";
 
 export default function Home() {
@@ -58,9 +59,13 @@ export default function Home() {
 	return (
 		<>
 			<main id='main' className='m-auto  pt-40 pb-36'>
-				<div className='content max-w-5xl m-auto px-8'>
+				<div className='content w=full m-auto'>
 					<Profile />
 					<Spacer />
+					<div className='bg-white'>
+						<About />
+						<Spacer />
+					</div>
 					<ProjectsPage />
 				</div>
 			</main>

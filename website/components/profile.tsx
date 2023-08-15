@@ -6,14 +6,14 @@ export default function Profile() {
 		<>
 			<div
 				id='profile'
-				className='flex flex-col  content-center space-y-12 pb-16 lg:flex-row lg:pb-32 lg:space-x-40 lg:space-y-0'
+				className='max-w-5xl px-8 m-auto flex flex-col  content-center space-y-12 pb-16 lg:flex-row lg:pb-32 lg:space-x-40 lg:space-y-0 '
 			>
 				<Image
 					id='portrait'
 					src={"/images/portrait.jpeg"}
 					alt='portrait'
-					width={500}
-					height={500}
+					width={450}
+					height={450}
 					className='m-auto -translate-x-96 opacity-0 overflow-hidden rounded-full h-64 w-64 lg:w-3/5 lg:h-3/5'
 				/>
 				<div id='bio' className='opacity-0 translate-x-96 text-lg lg:align-top'>
@@ -22,7 +22,7 @@ export default function Profile() {
 						id='title'
 						style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
 					>
-						Aspiring front-end developer👋🏼
+						Aspiring full-stack developer👋🏼
 					</h1>
 					<p className='text-center lg:text-left'>
 						Hi, I&apos;m Ben Pham. A passionate developer currently studying at
@@ -39,7 +39,7 @@ export default function Profile() {
             to enhance my presentation and analytical skills in different environments. 
             Being based in the Greater Los Angeles area has provided me with valuable experiences and 
             opportunities for personal growth. I have had the privilege of connecting with 
-            like-minded individuals who are also commited to software development,
+            like-minded individuals who are also committed to software development,
             which has allowed me to acquire new skills and refine existing ones. 
             In my free time, I find joy in playing volleyball and keeping up with the NBA. */}
 					<br />
@@ -68,7 +68,7 @@ export default function Profile() {
 			</div>
 			<div
 				id='skills'
-				className='skills flex flex-col flex-wrap lg:flex-row opacity-0 translate-y-5'
+				className='skills flex flex-col flex-wrap max-w-5xl px-8 m-auto lg:flex-row opacity-0 translate-y-5'
 			>
 				<div className='text-xl font-semibold'>
 					<h3 className=' w-fit lg:pr-10 border-black border-solid border-b-2 text-center m-auto pb-2 lg:border-r-2 lg:border-b-0 lg:mr-8 lg:mt-10'>

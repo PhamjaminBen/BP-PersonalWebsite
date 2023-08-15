@@ -30,7 +30,7 @@ export default function Project(project: Project) {
 			<br />
 			<article className='projectArticle mb-5'>
 				<p>{project.body}</p>
-				<h5>Languages and Resources used:</h5>
+				<h5 className='mt-3 mb-1'>Languages and Resources used:</h5>
 				<p>{project.languages}</p>
 			</article>
 			<a
