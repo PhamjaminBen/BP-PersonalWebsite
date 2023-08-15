@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Profile() {
 	return (
-		<>
+		<section className='pb-32'>
 			<div
 				id='profile'
 				className='max-w-5xl px-8 m-auto flex flex-col  content-center space-y-12 pb-16 lg:flex-row lg:pb-32 lg:space-x-40 lg:space-y-0 '
@@ -122,6 +122,6 @@ export default function Profile() {
 					</ul>
 				</div>
 			</div>
-		</>
+		</section>
 	);
 }

@@ -6,7 +6,7 @@ import Project from "@/components/project";
 
 const ProjectsPage = () => {
 	return (
-		<div id='projects' className='pt-24'>
+		<div id='projects' className='pt-16'>
 			<h1 className='text-5xl text-center font-inter font-extrabold pt-5 space-y-5 mb-16'>
 				Projects
 			</h1>

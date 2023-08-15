@@ -17,7 +17,7 @@ export default function About() {
 				opacity: scrollYProgress,
 			}}
 			id='about'
-			className='m-auto max-w-6xl px-8 pt-10 bg-white'
+			className='m-auto max-w-6xl px-8 py-32 bg-white scroll-mt-32'
 		>
 			<h1 className='text-5xl text-center font-inter font-extrabold pt-5 mb-16'>
 				About Me

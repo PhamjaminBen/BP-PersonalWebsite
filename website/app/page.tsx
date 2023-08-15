@@ -61,10 +61,8 @@ export default function Home() {
 			<main id='main' className='m-auto  pt-40 pb-36'>
 				<div className='content w=full m-auto'>
 					<Profile />
-					<Spacer />
 					<div className='bg-white'>
 						<About />
-						<Spacer />
 					</div>
 					<ProjectsPage />
 				</div>

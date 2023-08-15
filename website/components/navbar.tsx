@@ -3,7 +3,10 @@ import Link from "next/link";
 export default function NavBar() {
 	return (
 		<nav className='bg-white text-black font-semibold text-lg w-full shadow-md'>
-			<div id='content' className='max-w-6xl py-5 px-5 m-auto text-lg'>
+			<div
+				id='content'
+				className='max-w-6xl py-5 px-5 m-auto text-md sm:text-lg'
+			>
 				<ul className='flex gap-8'>
 					<li>
 						<button
@@ -27,6 +30,18 @@ export default function NavBar() {
 							className='hover:underline'
 						>
 							Home
+						</button>
+					</li>
+					<li>
+						<button
+							onClick={() =>
+								document
+									.getElementById("about")
+									?.scrollIntoView({ behavior: "smooth" })
+							}
+							className='hover:underline'
+						>
+							About
 						</button>
 					</li>
 					<li>
