@@ -6,6 +6,7 @@ import Home from "@/components/home";
 import Spacer from "@/components/sectionspacer";
 import About from "@/components/about";
 import { projects } from "@/lib/projects";
+import Skills from "@/components/skills";
 
 export default function Page() {
 	useEffect(() => {
@@ -48,7 +49,7 @@ export default function Page() {
 		}, 0);
 
 		setTimeout(() => {
-			gsap.to("#skills", {
+			gsap.to("#stack", {
 				y: 0,
 				opacity: 1,
 				duration: 1,
@@ -65,6 +66,7 @@ export default function Page() {
 						<About />
 					</div>
 					<ProjectsPage />
+					<Skills />
 				</div>
 			</main>
 		</>

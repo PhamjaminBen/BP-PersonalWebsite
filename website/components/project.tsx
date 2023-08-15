@@ -24,7 +24,7 @@ export default function Project(project: Project) {
 				scale: scrollYProgress,
 				opacity: scrollYProgress,
 			}}
-			className='px-8 lg:ml-16 bg-white shadow-xl rounded-3xl py-10 mb-10'
+			className='px-8 bg-white shadow-xl rounded-3xl py-10 mb-10 w-full'
 		>
 			<h2 className='font-extrabold text-2xl'>{project.title}</h2>
 			<br />

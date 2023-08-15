@@ -21,7 +21,7 @@ export default function Home() {
 	return (
 		<motion.section className='pb-32 scroll-mt-64' id='home' ref={ref}>
 			<div
-				id='photointro'
+				id='photo-intro'
 				className='max-w-5xl px-8 m-auto flex flex-col  content-center space-y-12 pb-16 lg:flex-row lg:pb-32 lg:space-x-40 lg:space-y-0 '
 			>
 				<Image
@@ -70,8 +70,8 @@ export default function Home() {
 			</div>
 
 			<div
-				id='skills'
-				className='skills flex flex-col flex-wrap max-w-5xl px-8 pb-24 m-auto lg:flex-row opacity-0 translate-y-5'
+				id='stack'
+				className='stack flex flex-col flex-wrap max-w-5xl px-8 pb-24 m-auto lg:flex-row opacity-0 translate-y-5'
 			>
 				<div className='text-xl font-semibold'>
 					<h3 className=' w-fit lg:pr-10 border-black border-solid border-b-2 text-center m-auto pb-2 lg:border-r-2 lg:border-b-0 lg:mr-8 lg:mt-10'>
