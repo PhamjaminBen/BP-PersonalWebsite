@@ -21,7 +21,7 @@ const ProjectsPage = () => {
 
 	return (
 		<motion.div id='projects' className='pt-16 scroll-mt-24' ref={ref}>
-			<h1 className='text-5xl text-center font-inter font-extrabold pt-5 space-y-5 mb-28'>
+			<h1 className='text-5xl text-center font-inter font-extrabold pt-5 space-y-5 m-10'>
 				Projects
 			</h1>
 			<div className='m-auto max-w-5xl gap-y-8 lg:gap-y-16 mb-10 px-5'>
