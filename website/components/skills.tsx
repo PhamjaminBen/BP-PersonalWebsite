@@ -36,7 +36,7 @@ export default function Skills() {
 		<motion.section
 			id='skills'
 			ref={ref}
-			className='mb-28 m-auto max-w-4xl px-8 scroll-mt-28 text-center sm:mb-40 mt-36'
+			className='m-auto max-w-4xl px-8 scroll-mt-28 text-center mt-36'
 		>
 			<h1 className='text-5xl text-center font-inter font-extrabold space-y-5 mb-16'>
 				My Skills

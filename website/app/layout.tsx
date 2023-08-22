@@ -29,7 +29,7 @@ export default function RootLayout({
 				<ActionSectionContextProvider>
 					<NavBar />
 					<main className='grow py-3 relative'>{children}</main>
-					<footer className=' bg-slate-700'>
+					<footer>
 						<Footer />
 					</footer>
 				</ActionSectionContextProvider>
