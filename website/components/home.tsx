@@ -86,43 +86,64 @@ export default function Home() {
 				</div>
 				<div id='icons'>
 					<ul className='stack-icons flex flex-wrap justify-center space-x-7 space-y-6'>
-						<li className='rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center translate-y-6'>
+						<li
+							title='HTML5'
+							className='rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center translate-y-6'
+						>
 							<img
 								className='h-10 w-10'
 								src='https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg'
 							/>
 						</li>
-						<li className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'>
+						<li
+							title='CSS'
+							className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'
+						>
 							<img
 								className='h-10 w-10'
 								src='https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg'
 							/>
 						</li>
-						<li className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'>
+						<li
+							title='TypeScript'
+							className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'
+						>
 							<img
 								className='h-10 w-10'
-								src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'
+								src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
 							/>
 						</li>
-						<li className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'>
+						<li
+							title='React'
+							className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'
+						>
 							<img
 								className='h-10 w-10'
 								src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207'
 							/>
 						</li>
-						<li className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'>
+						<li
+							title='tailwind'
+							className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'
+						>
 							<img
 								className='h-10 w-10'
 								src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png?20230715030042'
 							/>
 						</li>
-						<li className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'>
+						<li
+							title='MongoDB'
+							className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'
+						>
 							<img
 								className='h-10 w-10'
 								src='https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg'
 							/>
 						</li>
-						<li className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'>
+						<li
+							title='Next.js'
+							className='icon rounded-full bg-white shadow-md h-16 w-16 flex justify-center items-center'
+						>
 							<img
 								className='h-10 w-10'
 								src='https://www.svgrepo.com/show/354113/nextjs-icon.svg'
