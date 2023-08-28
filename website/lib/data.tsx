@@ -59,11 +59,12 @@ export const projects = [
 		title: "Family Tree Website",
 		image: "/images/facedetect.png",
 		github: "https://github.com/PhamjaminBen/FamilyTree",
-		body: "I created a family tree website using BalkanTree's data structure in order to visualize a family tree. \
+		body: "I created a family tree website for my family's heritage which includes a family tree using the. \
+    BalkanTreeJS plugin. I also created a separate admin website which allowed for editing of the tree.\
     I streamlined data input into the data structure by creating two forms, a form for members to input data, and \
     a separate admin form that would approve the data into the tree. I used react hook form in order to validate and\
     streamline the data inputting process. I managed all of the form and tree data through the MongoDB cloud service.",
-		skills: ["Next.js", "MongoDB", "TailwindCSS"],
+		skills: ["Next.js", "MongoDB", "TailwindCSS", "Redux"],
 	},
 	{
 		title: "Personal Website",
