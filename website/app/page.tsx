@@ -7,6 +7,7 @@ import Spacer from "@/components/sectionspacer";
 import About from "@/components/about";
 import { projects } from "@/lib/data";
 import Skills from "@/components/skills";
+import Contact from "@/components/contact";
 
 export default function Page() {
 	useEffect(() => {
@@ -67,6 +68,7 @@ export default function Page() {
 					</div>
 					<ProjectsPage />
 					<Skills />
+					<Contact />
 				</div>
 			</main>
 		</>

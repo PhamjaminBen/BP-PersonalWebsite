@@ -23,7 +23,7 @@ const fadeInAnimationsVariants = {
 
 export default function Skills() {
 	const { ref, inView } = useInView({
-		threshold: 0.5,
+		threshold: 0.25,
 	});
 	const { setActiveSection } = useActiveSectionContext();
 
@@ -36,7 +36,7 @@ export default function Skills() {
 		<motion.section
 			id='skills'
 			ref={ref}
-			className='m-auto max-w-4xl px-8 scroll-mt-28 text-center mt-36'
+			className='m-auto max-w-4xl px-8 scroll-mt-96 text-center my-36'
 		>
 			<h1 className='text-5xl text-center font-inter font-extrabold space-y-5 mb-16'>
 				My Skills
